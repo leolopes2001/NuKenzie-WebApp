@@ -1,0 +1,79 @@
+.welcome__main {
+  width: 100%;
+  height: 100vh;
+  background: var(--grey-4);
+  overflow: hidden;
+}
+.welcome__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.2rem;
+  padding: 5rem;
+  justify-content: center;
+  height: 100%;
+  animation-name: appear;
+  animation-duration: 1.5s;
+}
+.welcome__content h4 {
+  font-weight: var(--font-weight-1);
+  font-size: 38px;
+  line-height: 48px;
+  color: var(--white-fixed);
+  max-width: 347px;
+}
+.welcome__content p {
+  font-weight: var(--font-weight-5);
+  font-size: var(--font-size-4);
+  line-height: 26px;
+  color: var(--white-fixed);
+}
+.welcome__content button {
+  width: 241px;
+  height: 48px;
+  padding: 13px 20px;
+  background: var(--color-primary-1);
+  border: 2px solid var(--color-primary-1);
+  font-family: "Inter";
+  font-weight: var(--font-weight-4);
+  font-size: var(--font-size-4);
+  line-height: 19px;
+  color: var(--white-fixed);
+  cursor: pointer;
+  transition: all 300ms;
+  border-radius: var(--border-radius);
+}
+
+.welcome__img {
+  display: none;
+}
+
+@media (min-width: 863px) {
+  .welcome__img {
+    display: block;
+
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 450px) {
+  .welcome__content {
+    padding-left: 2rem;
+  }
+}
+.welcome__content button:hover {
+  background-color: var(--black-fixed);
+}
+@keyframes appear {
+  from {
+    transform: translate(-100%);
+  }
+  to {
+    width: auto;
+    transform: translate(0);
+  }
+}
+

@@ -1,0 +1,21 @@
+.containerHome {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-rows: 351px 100%;
+  grid-template-columns: 363px 100%;
+  
+}
+.home {
+  overflow-x: hidden;
+  height: 100vh;
+}
+@media (max-width: 1020px) {
+  .containerHome {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}

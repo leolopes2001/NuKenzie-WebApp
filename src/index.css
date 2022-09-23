@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  list-style: none;
+  font-style: normal;
+  font-family: 'Nunito', sans-serif;
+}
+
+:root {
+  --color-primary-1: #fd377e;
+  --color-primary-2: #e34981;
+  --color-secondary: #03b898;
+
+  --black-fixed: #000000;
+  --white-fixed: #ffff;
+
+  --grey-4: #212529;
+  --grey-3: #868e96;
+  --grey-2: #e9ecef;
+  --grey-1: #f8f9fa;
+
+  --font-size-1: 28px;
+  --font-size-2: 24px;
+  --font-size-3: 20px;
+  --font-size-4: 16px;
+  --font-size-5: 12px;
+
+  --font-weight-1: 800;
+  --font-weight-2: 700;
+  --font-weight-3: 600;
+  --font-weight-4: 500;
+  --font-weight-5: 400;
+
+  --border-radius: 8px;
+}

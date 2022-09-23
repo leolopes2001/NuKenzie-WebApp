@@ -1,0 +1,46 @@
+.totalMoney__section {
+  grid-row: 2/2;
+  margin-top: 16px;
+  animation-name: appearTotalMoney;
+  animation-duration: 0.8s;
+}
+.totalMoney__section {
+  background: var(--white-fixed);
+  border: 1px solid var(--grey-2);
+  border-radius: 4px;
+  padding: 20px 24px 18px 24px;
+  display: flex;
+  justify-content: space-between;
+}
+.totalMoney__text {
+    display: flex;
+    flex-direction: column;
+}
+.totalMoney__text h4 {
+  font-weight: var(--font-weight-2);
+  font-size: var(--font-size-4);
+  line-height: 30px;
+  color: var(--grey-4);
+}
+.totalMoney__text p {
+  font-weight: var(--font-weight-5);
+  font-size: var(--font-size-5);
+  line-height: 22px;
+  color: #343a40;
+}
+.totalMoney__value p {
+  font-weight: var(--font-weight-2);
+  font-size: var(--font-size-4);
+  line-height: 30px;
+  color: #fd377e;
+}
+@keyframes appearTotalMoney{
+  from{
+    opacity: 0;
+    transform: scale(0);
+  }
+  to{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
