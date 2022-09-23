@@ -54,7 +54,7 @@ export const Form = ({
             value={description}
             required
           />
-          <span>Ex: Compra de ropuas</span>
+          <span>Ex: Compra de roupas</span>
         </div>
         <div className="form__div-align">
           <div className="form__value">
